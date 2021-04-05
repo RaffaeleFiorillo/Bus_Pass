@@ -1,0 +1,7 @@
+novoPasse- criar um novo passe
+validarPasse- verificar se um passe existe ou nao
+transferirSaldo- transferir saldo de um passe para o outro
+alterarPasse- alterar um passe existente
+carregarPasse- carregar um passe
+pagarViagem-efetuar o pagamento da viagem
+terminar-terminar o programa
