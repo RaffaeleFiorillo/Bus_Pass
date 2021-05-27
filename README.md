@@ -9,7 +9,7 @@ Portuguese: [LEIT_OOP1920_TP3.pdf](https://github.com/RaffaeleFiorillo/Bus_Pass/
 
 ## Program comands:
 
-  This are the comands that can be used in order to use the program
+  This are the comands that can be used in order to use the program:
 [comandos  para o PaDi.txt](https://github.com/RaffaeleFiorillo/Bus_Pass/files/6553130/comandos.para.o.PaDi.txt)
 
 
