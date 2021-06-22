@@ -1,5 +1,8 @@
 package PaDimain;
 import  classes.*;
+
+import javax.sound.midi.Soundbank;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -190,14 +193,15 @@ public class PaDi {
 	static Titular criarTitular() {
 		Scanner leitura;
 		DocumentoId doc=criarDocumento();
-		leitura=new Scanner(System.in);
-		int valid=0;
+		leitura = new Scanner(System.in);
+		int valid = 0;
 		String nome;
 		do {
 			if (valid==1)
-				System.out.println("Erro: Nome invalido. Por favor, tente novamente.");
+				System.out.println("Erro: Nome invalido. Deve conter no minimo duas palavras. Por favor, tente novamente.");
 			System.out.println("Introduza o nome do Titular: ");
 			nome=leitura.nextLine();
+			valid = 1;
 		}while(nome.split(" ").length<2);
 		Data data=new Data(0,0,0,0,0,0);
 		valid=0;
@@ -247,6 +251,7 @@ public class PaDi {
 		System.out.println("Insira o codigo do documento: ");
 		String codigo=leitura.nextLine();
 		DocumentoId doc=new DocumentoId(tipo,codigo);
+		System.out.println("Documento criado com sucesso!");
 		return doc;
 		}
 	
